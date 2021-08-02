@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<LINK REL=StyleSheet HREF="estilos.css" TYPE="text/css" MEDIA=screen>
+	<title></title>
+</head>
+<body>
+
+	<h1>Posición estática</h1>
+   <div class="seccion">
+	  <div class="static elemento">Esto es una capa con posicionamiento estático</div>
+      <div class="static elemento">posicionamiento static, predeterminado.</div>
+      <h1>CSS</h1>
+      <div class="elemento">Posicionamiento static, aunque en este caso no se indicó el atributo position static, pues no hace falta.</div>
+	</div>
+
+   <h1>Posición absoluta</h1>
+   <div class="seccion">
+      <div class="elemento">Elemento bloque normal 1</div>
+      <div class="elemento">Elemento bloque normal 2
+         <div class="absoluto elemento">
+         Elemento bloque con posición absoluta 3</div>
+         </div>
+      <div class="elemento">Elemento bloque normal 4</div>	
+   </div>
+
+   <h1>Posición relativa</h1>
+   <div class="seccion">
+      <div class="relativo elemento">Elemento bloque con posición relativa 1</div>
+      <div class="elemento">Elemento bloque normal 2</div>
+   </div>
+
+   <div class="fixed elemento">Elemento bloque con posición fixed</div>
+
+   <h1>Posicion flotante</h1>
+   <div class="seccion">
+      <p class="elemento">Elemento bloque sin márgenes</p>
+      <p class="float elemento">Elemento bloque flotante sin márgenes</p>
+      <p class="float elemento">Elemento bloque flotante sin márgenes</p>
+      <p class="float elemento">Elemento bloque flotante sin márgenes</p>	
+   </div>
+
+</body>
+</html>

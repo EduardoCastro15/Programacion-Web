@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+    <html>
+    <head>
+    	 <title>Example</title>
+    	 <style>
+            span{
+                transition: 1.5s;
+                font-family: "Arial", cursive;
+                padding: 5px;
+                border: medium double black;
+                background-color: #3CF;
+                font-size: medium;
+            }
+            div{
+                transition: ease-in-out 2s;
+                font-family: "Calibri", cursive;
+            }
+            #ejemplo{
+                font-family: Calibri;
+                font-weight: bold;
+                font-size: 50px;
+            }
+            #Example:hover {
+                font-size: 80px;
+                color: black;
+                transition-timing-function: ease-in-out;
+                transform: rotate(360deg);
+            }
+            #Example{
+                width: 200px;
+                height:150px;
+                color: white;
+            }
+            #pera:hover { 
+                font-size: 100px; 
+                transition-timing-function: ease-in-out;            
+                background-color: #00C51D;
+                color: white;
+            }
+            #manzana:hover {
+                font-size: 100px;
+                transition-timing-function: ease-out;              
+                background-color: #FF0000;
+                color: white;                
+            }
+            #uva:hover {
+                font-size: 100px;
+                transition-timing-function: ease-in;             
+                background-color: #9B00FF;
+                color: white;
+            }
+    		#banana:hover {
+                font-size: 100px;
+                transition-timing-function: linear;				
+                background-color: #EEFF00;
+                color: white;
+                transition-delay: 2s;
+    		 }
+            #di{
+                display: flex;
+                justify-content: center;
+            }
+    </style>
+    </head>
+    <body align="center">
+        <br><br>	
+        <div id="ejemplo">EJEMPLO</div>
+        <br><br><br><br>
+    	<span id="banana">BANANA</span> 
+        <br><br><br><br>
+    	<span id="pera">PERA</span>
+        <br><br><br><br>
+        <span id="manzana">MANZANA</span>
+        <br><br><br><br>
+        <span id="uva">UVA</span>
+        <br><br><br><br>
+        <div id="di">
+            <div id="Example"><Strong>GRACIAS!</Strong></div>
+        </div>
+    </body>
+    </html>

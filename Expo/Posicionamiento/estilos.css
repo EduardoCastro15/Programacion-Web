@@ -1,0 +1,42 @@
+.seccion{
+	margin: 2%;
+	padding: 5%;
+	position: relative;
+	background: #eeeeee;
+}
+.elemento{
+	margin: 1%;
+	padding: 3%;
+	background: #f1c6e7;
+}
+
+.static{
+	position: static;
+	background: #eb5f5d;
+}
+.absoluto{
+	position: absolute;
+	top:0;
+	left:0;
+	background: #64b2cd;
+}
+
+.relativo{
+	position: relative;
+	background: #4e4e4e;
+	top: 55px; left: 30px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: #3e64ff;
+  width: 300px;
+  z-index: 1;
+}
+
+.float{
+	z-index: 0;
+	float: left;
+}

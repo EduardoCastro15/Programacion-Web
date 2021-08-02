@@ -1,0 +1,67 @@
+h1{
+	width: 200px
+	height: 100px;
+	box-sizing: content-box;
+	border: purple 25px solid;
+	color: pink;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 10px;
+	text-align: center;
+	text-shadow: purple 6px 6px 8px;
+	line-height: 300%;
+	background-color: gray;
+}
+h3{
+	color: blue;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 10px;
+	border: purple 5px dashed;
+	text-shadow: purple 6px 6px 4px;
+	text-align: center;
+	background-color: lightblue;
+}
+body{
+	background-image: url(Cuadros.png);
+	background-size: auto auto;
+}
+table{
+	display: table;
+	border-color: purple;
+	margin: auto;
+	border-collapse: collapse;
+	border: purple 2px dashed;
+	direction: ltr;
+}	
+td{
+	border-color: purple;
+	border: purple 2px dashed;
+}
+td:hover{
+	background-image: url("Fondo.png");
+}
+p{
+	white-space: normal;
+	text-align: center;
+	font: oblique bold 120% cursive;
+	color: black;
+}
+p::first-line{
+	color: green;
+	text-transform: uppercase;
+}
+p::last-line{
+	color: green;
+	text-transform: uppercase;
+}
+ol{
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: purple;
+  line-height: 120%;
+  text-align: center;
+}
+img{
+	border: blue 5px dotted;
+}

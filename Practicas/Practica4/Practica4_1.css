@@ -1,0 +1,132 @@
+body{
+	background-image: url(Cuadros.png);
+	background-size: auto auto;
+}
+img{
+	border: lightpink 5px dotted;
+}
+section:hover{
+	background-image: url("Fondo.png");
+}
+h3.Encabezado{
+	text-align: right;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+}
+.Titulo{
+	text-align: right;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+}
+.Seccion1{
+	text-align: center;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+
+	margin: 2%;
+	padding: 2%;
+	background: transparent;
+
+	border: 1em solid purple;
+
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.Seccion2{
+	text-align: center;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+
+	margin: 2%;
+	padding: 2%;
+	background: transparent;
+
+	border: 1em solid purple;
+
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.Seccion3{
+	margin: 2%;
+	padding: 2%;
+	background: transparent;
+
+	border: 1em solid purple;
+
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.Seccion4{
+	margin: 2%;
+	padding: 2%;
+	background: transparent;
+
+	border: 1em solid purple;
+
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.Seccion5{
+	margin: 2%;
+	padding: 2%;
+	background: transparent;
+
+	border: 1em solid purple;
+
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.Seccion6{
+	margin: 2%;
+	padding: 2%;
+	background: transparent;
+
+	border: 1em solid purple;
+
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+#DatosPersonales{
+	text-align: left;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+}

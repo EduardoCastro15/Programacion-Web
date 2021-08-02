@@ -1,0 +1,140 @@
+body{
+	background-image: linear-gradient(to bottom, red, orange, yellow, green, blue, pink, violet, purple);
+}
+img{
+	border: lightpink 5px dotted;
+}
+h3.Encabezado{
+	text-align: center;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+}
+.Titulo{
+	text-align: center;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+}
+.grid-container > div {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	padding: 2%;
+	justify-content: space-between;
+
+	margin: 2%;
+	padding: 2%;
+	background: transparent;
+}
+#DatosPersonales{
+	text-align: left;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+}
+.Seccion1:hover{
+	background-image: radial-gradient(#D74177, #FFE98A);
+	/*transition-delay: 1s;
+	transition-duration: 2s;
+	transition-property: width, height;
+
+	font-size: 20px;
+	transition-timing-function: ease-in-out;
+	transform: rotate(360deg);*/
+}
+.Seccion1{
+	text-align: center;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+	border: 1em solid purple;
+	grid-area: 1/1/span 1/span 3;
+
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	padding: 2%;
+	align-content: center;
+	justify-content: space-between;
+
+	transition: ease-in-out 2s;
+}.Seccion2:hover{
+	background-image: radial-gradient(#662D8C, #ED1E79);
+}
+.Seccion2{
+	text-align: center;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+	border: 1em solid purple;
+	grid-column: 1/span 3;
+
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	padding: 2%;
+	justify-content: space-between;
+}
+.Seccion3:hover{
+	background-image: radial-gradient(#B066FE, #63E2FF);
+}
+.Seccion3{
+	border: 1em solid purple;
+	grid-column: 1/span 3;
+
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	padding: 2%;
+	justify-content: space-between;
+}
+.Seccion4:hover{
+	background-image: radial-gradient(#93278F, #00A99D);
+}
+.Seccion4{
+	border: 1em solid purple;
+	grid-column: 1/span 3;
+
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	padding: 2%;
+	justify-content: space-between;
+}
+.Seccion5:hover{
+	background-image: radial-gradient(#FCA5F1, #B5FFFF);
+}
+.Seccion5{
+	border: 1em solid purple;
+	grid-column: 1/span 3;
+
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	padding: 2%;
+	justify-content: space-between;
+}
+.Seccion6:hover{
+	background-image: radial-gradient(#00FFA1, #00FFFF);
+}
+.Seccion6{
+	border: 1em solid purple;
+	grid-column: 1/span 3;
+
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	padding: 2%;
+	justify-content: space-between;
+}

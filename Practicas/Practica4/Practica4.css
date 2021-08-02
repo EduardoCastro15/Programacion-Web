@@ -1,0 +1,88 @@
+body{
+	background-image: url(Cuadros.png);
+	background-size: auto auto;
+}
+img{
+	border: blue 5px dotted;
+}
+div:hover{
+	background-image: url("Fondo.png");
+}
+h3.Sec{
+	float: left;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+}
+h3.Encabezado{
+	float: right;
+	text-align: right;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+}
+p.Noticia1{
+	
+}
+#ThursdayAnniversary{
+	float: center;
+}
+.Seccion{
+	margin: 2%;
+	padding: 2%;
+	position: relative;
+	background: transparent;
+	border: blue 3px solid;
+	overflow: auto;
+}
+#WelcomeToTheMachine{
+	float: left;
+}
+#IPN{
+	float: center;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+}
+#XO{
+	float: right;
+}
+#Datos{
+	float: left;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+}
+#Horario{
+	text-align: center;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+}
+#OtraPagina{
+	text-align: right;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+}
+#DatosPersonales{
+	float: left;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+}

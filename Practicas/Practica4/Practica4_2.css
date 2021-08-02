@@ -1,0 +1,118 @@
+body{
+	background-image: url(Cuadros.png);
+	background-size: auto auto;
+}
+img{
+	border: lightpink 5px dotted;
+}
+section:hover{
+	background-image: url("Fondo.png");
+}
+h3.Encabezado{
+	text-align: center;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+}
+.Titulo{
+	text-align: center;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+}
+.grid-container > div {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	padding: 2%;
+	justify-content: space-between;
+
+	margin: 2%;
+	padding: 2%;
+	background: transparent;
+}
+
+.Seccion1{
+	text-align: center;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+	border: 1em solid purple;
+	grid-area: 1/1/span 1/span 3;
+
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	padding: 2%;
+	justify-content: space-between;
+}
+.Seccion2{
+	text-align: center;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+	border: 1em solid purple;
+	grid-column: 1/span 3;
+
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	padding: 2%;
+	justify-content: space-between;
+}
+.Seccion3{
+	border: 1em solid purple;
+	grid-column: 1/span 3;
+
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	padding: 2%;
+	justify-content: space-between;
+}
+.Seccion4{
+	border: 1em solid purple;
+	grid-column: 1/span 3;
+
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	padding: 2%;
+	justify-content: space-between;
+}
+.Seccion5{
+	border: 1em solid purple;
+	grid-column: 1/span 3;
+
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	padding: 2%;
+	justify-content: space-between;
+}
+.Seccion6{
+	border: 1em solid purple;
+	grid-column: 1/span 3;
+
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	padding: 2%;
+	justify-content: space-between;
+}
+#DatosPersonales{
+	text-align: left;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: pink 6px 6px 8px;
+	line-height: 150%;
+}
