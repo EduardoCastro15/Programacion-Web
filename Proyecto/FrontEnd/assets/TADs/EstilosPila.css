@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
+
+body, input, select, textarea, label {
+		color: #ffffff;
+		font-family: "Raleway", Arial, Helvetica, sans-serif;
+		font-size: 13pt;
+		font-weight: 300;
+		line-height: 1.65;
+	}
+
+body{
+	background-image: url('../../images/banner.jpg');
+}
+
+.centrarh{
+	text-align: center;
+	text-align-last: center;
+	font-size: 13pt;
+	font-weight: 300;
+}
+
+.botonh{
+	color: #ffffff;
+	background: #EBBB8F;
+	border-radius: 10px;
+}
+
+img, p{
+	padding: 0;
+}
+
+.botonh:hover{
+	color: #ffffff;
+	background: #879BE9;
+}
+
+#contenido .par{
+	color: #ffffff;
+	border-radius: 5px;
+	padding: 10px;
+	background: #EBBB8F;
+	width: 600px;
+	font-weight: 700;
+	font-size: 22px;
+	margin: 5px;
+}
+
+#contenido{
+	margin-bottom: 2em;
+	border-right: solid 2px #dbdbdb;
+	border-left: solid 2px #dbdbdb;
+	border-bottom: solid 2px #dbdbdb;
+	padding: 0px;
+}
+
+div .par {
+	animation-name: ChangeColor;
+  	animation-duration: 4s;
+}
+
+@keyframes ChangeColor {
+	from {background: transparent;}
+	to {background: #EBBB8F;}
+}

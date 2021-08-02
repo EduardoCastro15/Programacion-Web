@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
+
+body, input, select, textarea, label {
+		color: #ffffff;
+		font-family: "Raleway", Arial, Helvetica, sans-serif;
+		font-size: 13pt;
+		font-weight: 300;
+		line-height: 1.65;
+		margin: 50px;
+	}
+
+body{
+	background-image: url('../../images/banner.jpg');
+}
+
+.centrarh{
+	text-align: center;
+	text-align-last: center;
+	font-size: 13pt;
+	font-weight: 300;
+}
+
+.botonh{
+	color: #ffffff;
+	background: #EBBB8F;
+	border-radius: 10px;
+}
+
+label, p {
+	margin: 5px;
+}
+
+.botonh:hover{
+	color: #ffffff;
+	background: #879BE9;
+}
+
+.container .par{
+	color: #ffffff;
+	border-radius: 5px;
+	padding: 10px;
+	background: #EBBB8F;
+	width: 150px;
+	font-weight: 700;
+	font-size: 22px;
+	margin: 50px;
+}
+
+#Box{
+	width: 800%;
+	margin: 1em;
+	padding: 0px;
+}
+
+img {
+	animation-name: Aparecer;
+  	animation-duration: 4s;
+}
+
+@keyframes Aparecer {
+	from {
+		opacity: 0;
+		filter: alpha(opacity=50);}
+	to {
+		opacity: 1;
+		filter: alpha(opacity=50);}
+}

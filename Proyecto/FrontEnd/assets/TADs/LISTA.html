@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LISTA</title>
+	<link rel="stylesheet" type="text/css" href="EstilosLista.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+</head>
+<body>
+	<br>
+	<div class="col-md-6 ml-auto mr-auto centrarh">
+		<div class="form-group row centrarh" id="formposicion">
+			<label for="posicion" class="col-sm-12 col-md-12 col-form-label">Ingresa una posición:</label>
+			<div class="col-sm-6 col-md-6 centrarh ml-auto mr-auto">
+				<input type="number" class="form-control" id="posicion" value="0" min="0">
+			</div>
+		</div>
+
+		<div class="form-group row centrarh" id="formnumero">
+			<label for="numero" class="col-sm-12 col-md-12 col-form-label">Ingresa un numero:</label>
+			<div class="col-sm-6 col-md-6 centrarh ml-auto mr-auto">
+				<input type="number" required class="form-control" id="numero" value="">
+			</div>
+		</div>
+
+		<div class="form-group row centrarh" id="botones">
+			<div class="col-sm-12 centrarh">
+				<button class="btn botonh bggreen ml-auto mr-auto" id="btna" onclick="agrega(numero), mostrar_imagen()">INSERTAR</button><br><br>
+				<button class="btn botonh bgred ml-auto mr-auto" id="btne" onclick="elimina(), ocultar_imagen()">ELIMINAR</button><br>
+			</div>
+		</div>
+
+	</div>
+
+	<br>
+
+	<div class="col-md-6 ml-auto mr-auto centrarh" id="Box">
+		<div class="container ml-auto mr-auto centrarh" id="contenido">
+			<!--
+			<p class="par ml-auto mr-auto">1</p>
+			<img src="flecha.png" height="70px">
+			<br>
+			<img src="null.png" height="50px">
+		-->
+		</div>
+	</div>
+	<center id="Codigo"></center>
+
+<script type="text/javascript">
+	var numeros = new Array();
+	var posiciones = new Array();
+	var elemento=0;
+	var auxn=0, auxp=0;
+	var cadena="";
+	var error;
+		//alert(numeros);
+		if (elemento==0){
+			document.getElementById("formposicion").classList.add("d-none");
+		}
+
+		function agrega(posicion, numero){
+
+			var posicion = document.getElementById("posicion").value; //vale 0
+			var numero = document.getElementById("numero").value; //vale lo que ingresa usuario
+			if (numero=="") {error=1; alert("Debes ingresar un número.\nPor favor intenta de nuevo.");}
+			else if (posicion>elemento) {error=2; alert("Debes ingresar una posición entre 0 y "+elemento+".\nPor favor intenta de nuevo.");}
+			else if (posicion=="") {error=3; alert("Debes ingresar una posición.\nPor favor intenta de nuevo.");}
+			else error=0;
+
+			if(error==0){	//Si ingresa un numero
+				if(elemento==0){
+					numeros[0]=numero;
+					posiciones[0]=posicion;
+
+					elemento=elemento+1;
+
+					document.getElementById("posicion").setAttribute("max",elemento);
+					document.getElementById("btne").classList.add("d-block");
+					document.getElementById("formposicion").classList.add("d-block");
+
+					document.getElementById("contenido").innerHTML = '<label class="par ml-auto mr-auto centrarh">'+numeros[0]+'</label><img src="../../images/flecha.png" height="70px"><img src="../../images/null.png" height="50px">';
+				}
+				else{				
+					posiciones[elemento]=posicion; //posicion actual
+					numeros[elemento]=numero; //numero actual
+
+					for (var i = 0 ; i < elemento ; i++) {
+						if(posiciones[elemento]==posiciones[i]){//encuentra coincidencia de posición
+
+							for (var j = 0; j < elemento; j++) {//P1 aumenta las posiciones de todos los elementos
+								if(posiciones[j]>=posiciones[i])
+									posiciones[j]=j+1;
+							}
+
+							for (var j = 0; j < elemento; j++) {//P2 ordena registros posiciones y numeros
+								if(posiciones[j]>=posiciones[i]){
+									auxn=numeros[elemento];
+									numeros[elemento]=numeros[j];
+									numeros[j]=auxn;
+
+									auxp=posiciones[elemento];
+									posiciones[elemento]=posiciones[j];
+									posiciones[j]=auxp;
+								}
+							}
+						}
+					}
+
+					for (var i = 0; i <= elemento; i++) {
+						
+						cadena=cadena+'<label class="par ml-auto mr-auto centrarh">'+numeros[i]+'</label>';
+						if(i<elemento){
+							cadena=cadena+'<img src="../../images/flecha.png" height="70px">';
+						}
+					}
+					elemento=elemento+1;
+					cadena=cadena+'<img src="../../images/flecha.png" height="70px"><img src="../../images/null.png" height="50px">';
+					document.getElementById("contenido").innerHTML = cadena;
+					cadena="";
+				}	
+			}
+			//alert("P "+posiciones+"\nN "+numeros+"\nE "+elemento);
+		}
+
+		function elimina(posicion){
+
+			var posicion = document.getElementById("posicion").value; //la posicion que ingresa el usuario
+
+			if (posicion>(elemento-1)) {error=1; alert("Debes ingresar una posición entre 0 y "+(elemento-1)+".\nPor favor intenta de nuevo.");}
+			else if (posicion=="") {error=2; alert("Debes ingresar una posición.\nPor favor intenta de nuevo.");}
+			else error=0;
+
+			if(error==0){	//Si ingresa un numero
+				if(elemento==0){
+					alert("La lista no tiene elementos.\nPor favor primero ingresa algun elemento");
+				}
+				else{				
+					posiciones[elemento]=posicion; //posicion actual
+
+					for (var i = 0 ; i < elemento ; i++) {
+						if(posiciones[elemento]==posiciones[i]){//encuentra coincidencia de posición
+
+							for (var j = 0 ; j < elemento ; j++) {//P1 disminuye las posiciones de todos los elementos
+								if(posiciones[j]>=posiciones[i])
+									posiciones[j]=j-1;
+							}
+
+							for (j = 0; j < elemento; j++) {//P2 ordena registros posiciones y numeros
+								if(posiciones[j]>posiciones[i]){
+									
+									numeros[j-1]=numeros[j];
+									posiciones[j-1]=posiciones[j];
+								}
+							}
+						}
+					}
+
+					for (var i = 0; i < elemento-1; i++) {
+						
+						cadena=cadena+'<label class="par ml-auto mr-auto centrarh">'+numeros[i]+'</label>';
+						if(i<elemento-2){
+							cadena=cadena+'<img src="../../images/flecha.png" height="70px">';
+						}
+					}
+					elemento=elemento-1;
+					if(elemento!=0){
+						cadena=cadena+'<img src="../../images/flecha.png" height="70px"><img src="../../images/null.png" height="50px">';
+						document.getElementById("btne").classList.add("d-none");
+						document.getElementById("formposicion").classList.add("d-none");
+					}
+					document.getElementById("contenido").innerHTML = cadena;
+					cadena="";
+				}	
+			}
+			//alert("P "+posiciones+"\nN "+numeros+"\nE "+elemento);
+		}
+
+		function mostrar_imagen() {
+			img = document.getElementById("Codigo");
+			img.innerHTML = '<img src="../../images/Insertar.png" />';
+		}
+
+		function ocultar_imagen() {
+		    img = document.getElementById("Codigo");
+		    img.innerHTML = '<img src="../../images/Borrar.png" />';
+		}
+	</script>
+</body>
+</html>
